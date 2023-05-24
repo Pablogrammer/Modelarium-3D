@@ -8,6 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../main.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../scss/profile.scss">
 
     <title>Profile</title>
 </head>
@@ -48,16 +49,20 @@
                     <li class="header-link user-link transition">
                         <a href="profile.html">
                             <img class="link-icon heart-icon" src="../img/icons/heart.svg" alt="">
+                            <img class="none heart-icon" src="../img/icons/heart-red.svg" alt="">
                         </a>
                     </li>
                     <li class="header-link user-link">
                         <a href="profile.html">
                             <img class="link-icon star-icon" src="../img/icons/star.svg" alt="star.png">
+                            <img class="none star-icon" src="../img/icons/star-yellow.svg" alt="star.png">
                         </a>
                     </li>
                     <li class="header-link user-link">
                         <a href="profile.html">
                             <img class="link-icon profile-icon" src="../img/icons/profile.svg" alt="profile.png">
+                            <img class="none profile-icon" src="../img/icons/profile-blue.svg" alt="profile.png">
+
                         </a>
                     </li>
                 </div>
@@ -93,7 +98,13 @@
                             <span>Contact</span>
                         </a>
                     </li>
-                    
+                                
+                    <li>
+                        <a class="transition" href="contact.html">
+                            <img class="link-icon" src="../img/icons/team.svg" alt="team.svg">
+                            <span>About us</span>
+                        </a>
+                    </li>
                     <li>
                         <a class="transition" id="account-responsive-link" style="cursor:pointer;">
                             <div>

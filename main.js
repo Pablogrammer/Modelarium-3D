@@ -14,9 +14,16 @@ const backAccountLink = document.getElementById("back-account-responsive-link")
 
 // ICONS FROM HEADER
 const headerHeart = document.getElementsByClassName("heart-icon")[0];
-const headerStar = document.getElementsByClassName("star-icon")[0];
-const headerProfile = document.getElementsByClassName("profile-icon")[0];
+const headerHeart1src = document.getElementsByClassName("heart-icon")[0].src;
+const headerHeart2src = document.getElementsByClassName("heart-icon")[1].src;
 
+const headerStar = document.getElementsByClassName("star-icon")[0];
+const headerStar1src = document.getElementsByClassName("star-icon")[0].src;
+const headerStar2src = document.getElementsByClassName("star-icon")[1].src;
+
+const headerProfile = document.getElementsByClassName("profile-icon")[0];
+const headerProfile1src = document.getElementsByClassName("profile-icon")[0].src;
+const headerProfile2src = document.getElementsByClassName("profile-icon")[1].src;
 
 
 
@@ -64,27 +71,25 @@ $("main").click(function(){
 // HOVER EFFECTS FOR THE HEADER ICONS
 
 headerHeart.addEventListener("mouseover", function(){
-    headerHeart.src = headerHeart.src.split("heart").join("heart-red")
+    headerHeart.src = headerHeart2src
     
 });
 headerHeart.addEventListener("mouseout", function(){
-    headerHeart.src = headerHeart.src.split("heart-red").join("heart")
+    headerHeart.src = headerHeart1src
 });
 
 headerStar.addEventListener("mouseover", function(){
-    headerStar.src = headerStar.src.split("star").join("star-yellow")
+    headerStar.src = headerStar2src
 });
 headerStar.addEventListener("mouseout", function(){
-    headerStar.src = headerStar.src.split("star-yellow").join("star")
-
+    headerStar.src = headerStar1src
 });
 
 headerProfile.addEventListener("mouseover", function(){
-    headerProfile.src = headerProfile.src.split("profile").join("profile-blue")
+    headerProfile.src = headerProfile2src
 });
 headerProfile.addEventListener("mouseout", function(){
-    headerProfile.src = headerProfile.src.split("profile-blue").join("profile")
-
+    headerProfile.src = headerProfile1src
 });
 
 
@@ -134,11 +139,11 @@ function changePSLinkStates(link, newlink){
 
 
 // HELPER THAT TELLS THE WIDTH OF THE WINDOW
-this.document.getElementById("width").innerHTML = this.window.innerWidth;
+// this.document.getElementById("width").innerHTML = this.window.innerWidth;
 
-window.addEventListener("resize", function(){
-    this.document.getElementById("width").innerHTML = this.window.innerWidth;
-});
+// window.addEventListener("resize", function(){
+//     this.document.getElementById("width").innerHTML = this.window.innerWidth;
+// });
 
 
 
